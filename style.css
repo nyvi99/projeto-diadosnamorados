@@ -1,0 +1,54 @@
+body{
+    animation-name: cores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;   
+}
+@keyframes cores{
+    0% {background: #1d1942;}
+    25% {background: #19173d;}
+    50% {background: #000000;}
+    90% {background: #19173d;}
+    100% {background: #1d1942;}
+}
+.paragrafo1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+.paragrafo2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+.linha{
+    position: relative;
+    top: -20px;
+}
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 400px;
+    width: 300px; 
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
